@@ -14,12 +14,19 @@ Features
 	•	Filters objects based on confidence thresholds.
 
 	•	Visualizes detected objects by drawing bounding boxes and displaying labels.
+
 	2.	Image Captioning
+
 	•	Generates a basic caption for the image using the BLIP model.
+
 	•	Enhances the caption with contextual descriptions using detected objects and additional context.
+
 	3.	User Context Integration
+
 	•	Allows users to provide context for image descriptions to generate more meaningful captions.
+
 	4.	Object Visualization
+
 	•	Draws bounding boxes on the image and labels detected objects with their names and confidence levels.
 
 Code Structure
@@ -28,11 +35,14 @@ Code Structure
 
 The ObjectDetection class handles object detection tasks:
 	•	Model Loading: Uses YOLOv5 from PyTorch Hub.
+
 	•	Object Detection: Detects objects in an image and filters detections with confidence > 0.4.
+
 	•	Visualization: Draws bounding boxes and labels on the image to visualize detections.
 
 Key Methods:
 	•	object_detection(): Detects and filters objects.
+
 	•	visualize_objects(filtered_detections): Visualizes the detections on the image.
 
 2. Image Captioning
