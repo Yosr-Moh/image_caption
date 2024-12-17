@@ -7,6 +7,7 @@ This project combines image captioning with object detection to generate detaile
 The project integrates advanced models like YOLOv5 for object detection and Salesforce’s BLIP for image captioning, along with fine-tuned text generation using a transformer model.
 
 Features
+
 	1.	Object Detection
 
 	•	Detects objects in an image using YOLOv5.
@@ -34,30 +35,35 @@ Code Structure
 1. Object Detection
 
 The ObjectDetection class handles object detection tasks:
-	•	Model Loading: Uses YOLOv5 from PyTorch Hub.
+	
+ 	•	Model Loading: Uses YOLOv5 from PyTorch Hub.
 
 	•	Object Detection: Detects objects in an image and filters detections with confidence > 0.4.
 
 	•	Visualization: Draws bounding boxes and labels on the image to visualize detections.
 
 Key Methods:
-	•	object_detection(): Detects and filters objects.
+	
+ 	•	object_detection(): Detects and filters objects.
 
 	•	visualize_objects(filtered_detections): Visualizes the detections on the image.
 
 2. Image Captioning
 
 The objectCaption class is responsible for generating captions:
-	•	Basic Captioning: Uses the BLIP model to generate a generic caption for the image.
+	
+ 	•	Basic Captioning: Uses the BLIP model to generate a generic caption for the image.
 	•	Enhanced Captioning: Combines basic captions with object descriptions and user-provided context for detailed scene interpretation.
 
 Key Methods:
-	•	generate_basic_caption(image): Generates a basic caption.
+	
+ 	•	generate_basic_caption(image): Generates a basic caption.
 	•	enhance_caption_with_objects(image, detected_objects, context): Enhances the caption by integrating object information and context using a language model.
 
 3. Main Execution Flow
 
 The script iterates through a list of images:
+	
 	•	Detects objects in each image and visualizes them.
 	•	Prompts the user to input a context for the image.
 	•	Generates an enhanced caption for the image using object detection and contextual data.
@@ -103,6 +109,7 @@ python main.py
 	4.	Captions will be printed to the console and stored in a list.
 
 Overall Flow of the Code
+	
 	1.	Initialization:
 	•	Instantiate the ObjectDetection and objectCaption classes.
 	•	Specify the list of images to process.
@@ -121,6 +128,7 @@ Overall Flow of the Code
 
 
 Workflow:
+	
 	1.	Object Detection:
 	•	Detected objects: ["dog", "ball", "grass"].
 	2.	Basic Caption:
@@ -131,6 +139,7 @@ Workflow:
 	•	“The image shows a dog sitting on the grass with a ball nearby in a summer park. The dog appears to be relaxed, and the ball suggests playtime activities.”
 
 Future Improvements
+	
 	1.	Add support for batch processing of images.
 	2.	Save captions and visualized images to files.
 	3.	Enhance context interpretation using semantic analysis.
