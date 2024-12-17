@@ -106,11 +106,6 @@ Overall Flow of the Code
 	•	Display the enhanced captions.
 	•	Optionally save or use captions for further tasks.
 
-Example Output
-
-Input Image
-
-An image containing a “dog sitting on grass with a ball.”
 
 Workflow:
 	1.	Object Detection:
@@ -129,3 +124,25 @@ Future Improvements
 
 
 
+**Sample of the output** 
+
+image 1:
+context: Summer
+Caption before enhancemenet a bench in a park with a tree in the background
+Caption after enhancment 
+    Output:
+        The image depicts a serene park scene during the summer season. The bench, a common fixture in such parks, is positioned in a way that suggests it is a popular spot for visitors
+
+image 2:
+contect: night 
+Caption before enhancemenet a busy street in the city at night
+Caption after enhancment:
+Output:
+        The scene depicted in the image is a bustling urban street during the summer night. The image captures the vibrant energy of city life, with various objects and individuals interacting in a dynamic environment.
+
+image 3:
+contect: cute 
+Caption before enhancemenet a cat sitting on a couch next to a laptop
+Caption after enhancment 
+    Output:
+        The image depicts a domestic scene during the summer season, where a cat is comfortably seated on a couch, possibly enjoying the warmth of the room.

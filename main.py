@@ -16,4 +16,3 @@ if __name__=="__main__":
         captions.append(ObjCaption.enhance_caption_with_objects(objDetection.image,detected_objects,context='Summer'))
     print(captions)
 
-

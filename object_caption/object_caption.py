@@ -10,7 +10,7 @@ class objectCaption:
         self.processor = BlipProcessor.from_pretrained("Salesforce/blip-image-captioning-base")
         self.model = BlipForConditionalGeneration.from_pretrained("Salesforce/blip-image-captioning-base")
         self.MODEL ="microsoft/Phi-3-mini-128k-instruct"
-        self.client = InferenceClient(token='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',timeout=300)
+        self.client = InferenceClient(token='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',timeout=120)
 
 
 
@@ -55,7 +55,7 @@ class objectCaption:
         
         """
         try:
-            response = self.client.text_generation(model=self.MODEL, prompt=prompt, max_new_tokens=100)
+            response = self.client.text_generation(model=self.MODEL, prompt=prompt, max_new_tokens=50)
             print('Caption after enhancment',response)
         except Exception as e:
             print(f"Error during text generation: {e}")

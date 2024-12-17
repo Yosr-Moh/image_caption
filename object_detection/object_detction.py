@@ -48,6 +48,6 @@ class ObjectDetection:
             cv2.putText(self.image, f'{label} {confidence:.2f}', (xmin, ymin - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 0, 0), 2)
 
         # Display the image with detections
-        cv2.imshow('detected',self.image)
-        cv2.waitKey(0)
-        cv2.destroyAllWindows()
+        # cv2.imshow('detected',self.image)
+        # cv2.waitKey(0)
+        # cv2.destroyAllWindows()
