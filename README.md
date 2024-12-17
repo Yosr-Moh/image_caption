@@ -8,8 +8,11 @@ The project integrates advanced models like YOLOv5 for object detection and Sale
 
 Features
 	1.	Object Detection
+
 	•	Detects objects in an image using YOLOv5.
+
 	•	Filters objects based on confidence thresholds.
+
 	•	Visualizes detected objects by drawing bounding boxes and displaying labels.
 	2.	Image Captioning
 	•	Generates a basic caption for the image using the BLIP model.
@@ -64,7 +67,7 @@ Prerequisites
 Installation Steps
 	1.	Clone the repository:
 
-git clone https://github.com/your-repo/image-captioning-object-detection.git
+git clone https://github.com/Yosr-Moh/image_caption.git
 
 
 	2.	Install the dependencies:
