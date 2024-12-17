@@ -71,6 +71,7 @@ The script iterates through a list of images:
 Installation
 
 Prerequisites
+
 	1.	Python 3.8 or above
 	2.	Required libraries:
 	•	transformers
@@ -97,6 +98,7 @@ pip install -r requirements.txt
 	•	Text Generation Model: Use the Hugging Face microsoft/Phi-3-mini-128k-instruct.
 
 How to Run
+
 	1.	Place the images to be processed in the ./test images/ directory.
 	2.	Run the main script:
 
@@ -148,23 +150,23 @@ Future Improvements
 
 **Sample of the output** 
 
-image 1:
-context: Summer
-Caption before enhancemenet a bench in a park with a tree in the background
-Caption after enhancment 
+	image 1:
+	context: Summer
+	Caption before enhancemenet a bench in a park with a tree in the background
+	Caption after enhancment 
     Output:
         The image depicts a serene park scene during the summer season. The bench, a common fixture in such parks, is positioned in a way that suggests it is a popular spot for visitors
 
-image 2:
-contect: night 
-Caption before enhancemenet a busy street in the city at night
-Caption after enhancment:
-Output:
-        The scene depicted in the image is a bustling urban street during the summer night. The image captures the vibrant energy of city life, with various objects and individuals interacting in a dynamic environment.
-
-image 3:
-contect: cute 
-Caption before enhancemenet a cat sitting on a couch next to a laptop
-Caption after enhancment 
-    Output:
-        The image depicts a domestic scene during the summer season, where a cat is comfortably seated on a couch, possibly enjoying the warmth of the room.
+	image 2:
+	contect: night 
+	Caption before enhancemenet a busy street in the city at night
+	Caption after enhancment:
+	Output:
+	        The scene depicted in the image is a bustling urban street during the summer night. The image captures the vibrant energy of city life, with various objects and individuals interacting in a dynamic environment.
+	
+	image 3:
+	contect: cute 
+	Caption before enhancemenet a cat sitting on a couch next to a laptop
+	Caption after enhancment 
+	    Output:
+	        The image depicts a domestic scene during the summer season, where a cat is comfortably seated on a couch, possibly enjoying the warmth of the room.
